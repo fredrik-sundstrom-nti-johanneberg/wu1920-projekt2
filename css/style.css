@@ -1,0 +1,32 @@
+body {
+    background-color: whitesmoke;
+}
+
+header {
+    text-align: center;
+}
+
+/*
+#header {
+    display: grid;
+    grid-template-columns: repeat(3fr);
+    grid-template-areas:
+    "h1"
+}
+*/
+
+#huvuddel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "aside article";
+}
+
+#helbild {
+    grid-area: aside;
+}
+
+#information {
+    grid-area: article; 
+    text-align: center
+}
