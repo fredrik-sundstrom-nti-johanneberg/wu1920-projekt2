@@ -7,6 +7,7 @@ header {
 }
 
 /*
+Ska snvändas ifall jag vill ha ett grid i nav
 #header {
     display: grid;
     grid-template-columns: repeat(3fr);
@@ -15,18 +16,15 @@ header {
 }
 */
 
-#huvuddel {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "aside article";
-}
-
-#helbild {
-    grid-area: aside;
-}
-
 #information {
     grid-area: article; 
     text-align: center
+}
+
+/*
+För att mobil anpassa hemsidan senare. 
+@media screen and (min-width: 480px) {
+    body {
+        background-color: aqua;
+    }
 }
