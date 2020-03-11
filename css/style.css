@@ -42,12 +42,16 @@ header {
     height: 100%;
     display: block;
     transform-origin: right;
-    transition: 0,5s ease-in;
-    transform: translateX(100%);
+    transition: 0.7s ease-in;
 }
 
-.curtain.active curtain span {
-    transform: translateX(0%);
+.curtain.active span {
+    position: absolute;
+    width: 2000px;
+    height: 1000px;
+    background-color: lightgrey;
+    animation: slide 1s forwards;
+    animation-delay: 2s;
 }
 
 ul {
@@ -78,27 +82,6 @@ ul {
      display: block;
 }
 
-#nav {
-    display: grid;
-    grid-template-columns: repeat(5fr);
-    grid-template-areas: 
-    "1 2 3 4 5";
-}
-
-#info {
-    grid-template-columns: 1fr 3fr;
-    display: grid;
-    grid-template-areas: 
-    "bild huvuddel";
-}
-#footer {
-    margin-top: 25px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "kontakt copyright";
-}
-
 /*
 För att mobil anpassa hemsidan senare. 
 @media screen and (min-width: 480px) {
@@ -108,21 +91,128 @@ För att mobil anpassa hemsidan senare.
 }
 */
 
-image {
-    float: left;
+h2 {
+    margin-left: 10px;
 }
-
 
 #tjanster {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
-    "tjanster1 film tjanster3"
-    "tjanster4 tjnaster5 tjanster6";
-    text-align: center;    
+    "immaterialratt film it"
+    "upphandling marknadsratt affarsjuridik";
+    text-align: center;
+}
+
+#immaterialratt {
+    border: solid;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+#film {
+    border: solid;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+
+#it {
+    border: solid;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+
+#upphandling {
+    border: solid;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+
+#marknadsratt {
+    border: solid;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+#affarsjuridik {
+    border: solid;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
 #sidfot {
     text-align: center;
     margin-top: 25px;
+}
+
+#ombyran {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "byran byranbild"
+}
+
+#byran {
+    padding: 10px;
+}
+
+#medarbetare {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "infomedarbetare medarbetarebild" 
+}
+
+#kontakt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "infokontakt kontaktbild" 
+}
+
+#immaterialratttext {
+    visibility: hidden;
+    position: absolute;
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: 0;
+}
+
+.tjanstertext {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.tjanstertext span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    transition: ease-in;
+}
+
+.tjanstertext.active span {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
 }
