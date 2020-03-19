@@ -1,6 +1,13 @@
 body {
-    background-color: whitesmoke;
+    background-color: rgb(E3E3E3);
+    font-family: kobenhavn-cs, sans-serif;
+    font-style: normal;
 }
+
+.index {
+    background-color: white;
+}
+
 header {
     margin-bottom: 25px;
 }
@@ -9,8 +16,8 @@ header {
     display: inline-block;
     cursor: pointer;
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 40px;
+    right: 40px;
     z-index: 1000;
     transition: 0.5s;
 }
@@ -47,7 +54,7 @@ header {
 
 .curtain.active span {
     position: absolute;
-    width: 2000px;
+    width: 3000px;
     height: 1000px;
     background-color: lightgrey;
     animation: slide 1s forwards;
@@ -82,19 +89,6 @@ ul {
      display: block;
 }
 
-/*
-För att mobil anpassa hemsidan senare. 
-@media screen and (min-width: 480px) {
-    body {
-        background-color: aqua;
-    }
-}
-*/
-
-h2 {
-    margin-left: 10px;
-}
-
 #tjanster {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -102,28 +96,32 @@ h2 {
     "immaterialratt film it"
     "upphandling marknadsratt affarsjuridik";
     text-align: center;
-    height: 500px;
+    height: 490px;
 }
 
 #immaterialratt {
     border: solid;
+    border-color: white;
+    color: red;
     border-radius: 20px;
     margin-right: 100px;
     margin-left: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 20px;
     height: 180px;
 }
 
 
 #film {
     border: solid;
+    border-color: white;
+    color: red;
     border-radius: 20px;
     margin-left: 100px;
     margin-right: 100px;
-    margin-top: 50px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,10 +131,12 @@ h2 {
 
 #it {
     border: solid;
+    border-color: white;
+    color: red;
     border-radius: 20px;
     margin-left: 100px;
     margin-right: 100px;
-    margin-top: 50px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,9 +146,12 @@ h2 {
 
 #upphandling {
     border: solid;
+    border-color: white;
+    color: red;
+    border-radius: 20px;
     margin-left: 100px;
     margin-right: 100px;
-    margin-top: 50px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -158,9 +161,12 @@ h2 {
 
 #marknadsratt {
     border: solid;
+    border-color: white;
+    color: red;
+    border-radius: 20px;
     margin-right: 100px;
     margin-left: 100px;
-    margin-top: 50px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,9 +176,12 @@ h2 {
 
 #affarsjuridik {
     border: solid;
+    border-color: white;
+    border-radius: 20px;
+    color: red;
     margin-left: 100px;
     margin-right: 100px;
-    margin-top: 50px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -181,9 +190,28 @@ h2 {
 
 #sidfot {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 21px;
 }
 
+#sidfot1{
+    text-align: center;
+    margin-top: 485px;
+}
+
+#sidfot2 {
+    text-align: center;
+    margin-top: 45px;
+}
+
+#sidfot3 {
+    text-align: center;
+    margin-top: 64px;
+}
+
+#sidfot4 {
+    text-align: center;
+    margin-top: 40px;
+}
 #ombyran {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -193,6 +221,9 @@ h2 {
 
 #byran {
     padding: 10px;
+    margin-left: 100px;
+    font-family: kobenhavn-cs, sans-serif;
+    font-style: normal;
 }
 
 #medarbetare {
@@ -204,11 +235,16 @@ h2 {
 
 #kontakt {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-areas:
-    "infokontakt kontaktbild" 
+    "infokontakt kontaktbild";
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
+
+/*
 #immaterialratttext {
     visibility: hidden;
     position: absolute;
@@ -240,16 +276,74 @@ h2 {
     height: 100px;
     background-color: blue;
 }
+*/
 
 #infokontakt {
-    border: solid;
     padding: 15px;
-    border-radius: 10px;
     margin: 10px;
+    margin-left: 200px;
 }
 
 #kontaktbild {
-    border: solid;
-    border-radius: 10px;
-    padding: 15px;
+    margin-right: 50px;
 }
+
+#bildkontakt {
+    height: 400px;
+}
+/*
+.vemvet {
+    background-color: rgba(0, 0, 0, 4)
+    cursor: pointer;
+    display: none;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.vemvet .ingenvet {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+*/
+img {
+    width: 650px;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+#logga1 {
+    margin-top: 250px;
+    width: 800px;
+    margin-left: 0px;
+}
+
+#infobild {
+    height: 400px;
+    margin-right: 50px;
+}
+
+#byran {
+    margin-left: 40px;
+}
+
+#medarbetarebild {
+    height: 400px;
+    width: 400px;
+    margin-right: 50px;
+    margin-left: 100px;
+}
+
+#medarbetare {
+    margin-left: 50px;
+}
+
+@media screen and (max-width: 480px) {
+    img {
+        width: 200px;
+    }
+}
+
