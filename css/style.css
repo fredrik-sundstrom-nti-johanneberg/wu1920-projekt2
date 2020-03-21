@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(E3E3E3);
+    background-color: rgba(E3E3E3);
     font-family: kobenhavn-cs, sans-serif;
     font-style: normal;
 }
@@ -12,21 +12,38 @@ header {
     margin-bottom: 25px;
 }
 
-.container {
+.container3, .container4, .container5 {
     display: inline-block;
     cursor: pointer;
     position: fixed;
-    top: 40px;
-    right: 40px;
+    top: 20px;
+    right: 20px;
     z-index: 1000;
     transition: 0.5s;
 }
 
 .bar1, .bar2, .bar3 {
-    width: 35px;
+    width: 40px;
     height: 5px;
     background-color:black;
     margin: 6px 0;
+}
+
+.bar11, .bar22, .bar33 {
+    width: 50px;
+    height: 8px;
+    background-color:black;
+    margin: 6px 0;
+}
+
+.container1, .container2 {
+    display: inline-block;
+    cursor: pointer;
+    position: fixed;
+    top: 30px;
+    right: 40px;
+    z-index: 1000;
+    transition: 0.5s;
 }
 
 .curtain {
@@ -55,7 +72,7 @@ header {
 .curtain.active span {
     position: absolute;
     width: 3000px;
-    height: 1000px;
+    height: 2000px;
     background-color: lightgrey;
     animation: slide 1s forwards;
     animation-delay: 2s;
@@ -101,7 +118,7 @@ ul {
 
 #immaterialratt {
     border: solid;
-    border-color: white;
+    border-color: black;
     color: red;
     border-radius: 20px;
     margin-right: 100px;
@@ -109,19 +126,19 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 120px;
     height: 180px;
 }
 
 
 #film {
     border: solid;
-    border-color: white;
+    border-color: black;
     color: red;
     border-radius: 20px;
     margin-left: 100px;
     margin-right: 100px;
-    margin-top: 20px;
+    margin-top: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,12 +148,12 @@ ul {
 
 #it {
     border: solid;
-    border-color: white;
+    border-color: black;
     color: red;
     border-radius: 20px;
     margin-left: 100px;
     margin-right: 100px;
-    margin-top: 20px;
+    margin-top: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,12 +163,12 @@ ul {
 
 #upphandling {
     border: solid;
-    border-color: white;
+    border-color: black;
     color: red;
     border-radius: 20px;
     margin-left: 100px;
     margin-right: 100px;
-    margin-top: 20px;
+    margin-top: 180px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,12 +178,12 @@ ul {
 
 #marknadsratt {
     border: solid;
-    border-color: white;
+    border-color: black;
     color: red;
     border-radius: 20px;
     margin-right: 100px;
     margin-left: 100px;
-    margin-top: 20px;
+    margin-top: 180px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -176,12 +193,12 @@ ul {
 
 #affarsjuridik {
     border: solid;
-    border-color: white;
+    border-color: black;
     border-radius: 20px;
     color: red;
     margin-left: 100px;
     margin-right: 100px;
-    margin-top: 20px;
+    margin-top: 180px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,12 +207,12 @@ ul {
 
 #sidfot {
     text-align: center;
-    margin-top: 21px;
+    margin-top: 400px;
 }
 
 #sidfot1{
     text-align: center;
-    margin-top: 485px;
+    margin-top: 430px;
 }
 
 #sidfot2 {
@@ -205,7 +222,7 @@ ul {
 
 #sidfot3 {
     text-align: center;
-    margin-top: 64px;
+    margin-top: 60px;
 }
 
 #sidfot4 {
@@ -221,62 +238,27 @@ ul {
 
 #byran {
     padding: 10px;
-    margin-left: 100px;
-    font-family: kobenhavn-cs, sans-serif;
-    font-style: normal;
+    margin-right: 70px;
+}
+
+#byranbild {
+    margin-left: 25px;
 }
 
 #medarbetare {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    "infomedarbetare medarbetarebild" 
+    "infomedarbetare medarbetarebild";
+    margin-left: 50px;
 }
 
-#kontakt {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "infokontakt kontaktbild";
+div {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    height: 450px;
 }
-
-
-/*
-#immaterialratttext {
-    visibility: hidden;
-    position: absolute;
-    transition: 0.5s;
-    opacity: 0;
-    transition-delay: 0;
-}
-
-.textruta1 {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    display: block;
-}
-
-.textruta1 span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    transition: ease-in;
-}
-
-.textruta1.active span {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: blue;
-}
-*/
 
 #infokontakt {
     padding: 15px;
@@ -284,31 +266,10 @@ ul {
     margin-left: 200px;
 }
 
-#kontaktbild {
-    margin-right: 50px;
-}
-
 #bildkontakt {
     height: 400px;
 }
-/*
-.vemvet {
-    background-color: rgba(0, 0, 0, 4)
-    cursor: pointer;
-    display: none;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
 
-.vemvet .ingenvet {
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-}
-*/
 img {
     width: 650px;
     margin-top: 15px;
@@ -317,33 +278,233 @@ img {
 
 #logga1 {
     margin-top: 250px;
-    width: 800px;
+    width: 1100px;
     margin-left: 0px;
 }
 
 #infobild {
     height: 400px;
-    margin-right: 50px;
 }
 
-#byran {
-    margin-left: 40px;
-}
 
-#medarbetarebild {
+#portratt {
     height: 400px;
     width: 400px;
-    margin-right: 50px;
-    margin-left: 100px;
+    margin-left: 90px;
 }
 
-#medarbetare {
-    margin-left: 50px;
+#infomedarbetare {
+    margin-right: 100px;
+    margin-top: 15px;
 }
 
 @media screen and (max-width: 480px) {
-    img {
+    #logga1 {
+        width: 350px;
+        margin-left: 0px;
+    }
+
+    #sidfot1 {
+        margin-top: 430px;
+    }
+    #logga2 {
+        width: 300px;
+        margin-left: 0px;
+    }
+
+    #logga3 {
+        width: 300px;
+        margin-left: 0px;
+    }
+
+    #logga4 {
+        width: 300px;
+        margin-left: 0px;
+    }
+
+    #logga5 {
+        width: 300px;
+        margin-left: 0px;
+    }
+    .curtain ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 2em;
+        text-align: center;
+        display: block;
+        margin-right: 30px;
+    }
+
+    .curtain.active span {
+        position: absolute;
+        width: 500px;
+        height: 1000px;
+        background-color: lightgrey;
+        animation: slide 1s forwards;
+        animation-delay: 2s;
+    }
+
+    #tjanster {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "immateriallratt"
+        "film"
+        "it"
+        "upphandling"
+        "marknadsratt"
+        "affarsjuridik";
+    }
+
+    .bar1, .bar2, .bar3 {
+        width: 30px;
+        height: 3px;
+        background-color:black;
+        margin: 6px 0;
+    }
+
+    .bar11, .bar22, .bar33 {
+        width: 30px;
+        height: 3px;
+        background-color:black;
+        margin: 6px 0;
+    }
+
+    .container1 {
+        top: 40px;
+        left: 300px;
+        z-index: 1000;
+        transition: 0.5s;
+    }
+
+    .container2 {
+        top: 45px;
+        left: 320px;
+    }
+
+    .container3 {
+        top: 45px;
+        left: 320px;
+    }
+
+    .container4 {
+        top: 45px;
+        left: 325px;
+    }
+
+    .container5 {
+        top: 45px;
+        left: 325px;
+    }
+    .container {
+    top: 46px;
+    right: 20px;
+    z-index: 1000;
+    transition: 0.5s;
+    }
+
+    #immaterialratt {
+        margin-left: 50px;
+        margin-top: 20px;
+        width: 250px;
+    }
+    #film {
+        width: 250px;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    
+    
+    #it {
+        width: 250px;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    
+    
+    #upphandling {
+        width: 250px;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    
+    
+    #marknadsratt {
+        width: 250px;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    
+    
+    #affarsjuridik {
+        width: 250px;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+
+    #medarbetare {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "medarbetarebild"
+        "infomedarbetare";
+        margin-left: 10px; 
+    }
+    #infomedarbetare {
+        max-width: 250px;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+
+    #portratt {
+        height: 200px;
         width: 200px;
+        margin-right: 20px;
+        margin-left: 65px;
+    }
+
+    div {
+        width: 350px;
+        height: 600px;
+    }
+
+    #infokontakt {
+        padding-top: 180px;
+        margin: 10px;
+        margin-left: 50px;
+    }
+
+    #ombyran {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "infobild"
+        "byran";
+    }
+
+    #infobild{
+        height: 200px;
+        width: 280px;
+        margin-left: 37px;
+    }
+
+    #byran {
+        margin-left: 15px;
+        margin-right: 15px;
+
+    }
+
+    #sidfot {
+        text-align: center;
+        margin-top: 750px;
+    }
+
+    #sidfot2 {
+        text-align: center;
+        margin-top: 150px;
+    }
+    #sidfot3 {
+        text-align: center;
+        margin-top: 320px;
     }
 }
-
