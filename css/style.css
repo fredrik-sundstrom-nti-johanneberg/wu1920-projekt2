@@ -12,12 +12,12 @@ header {
     margin-bottom: 25px;
 }
 
-.container3, .container4, .container5 {
+.container2, .container3, .container4, .container5 {
     display: inline-block;
     cursor: pointer;
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 50px;
+    right: 50px;
     z-index: 1000;
     transition: 0.5s;
 }
@@ -36,11 +36,11 @@ header {
     margin: 6px 0;
 }
 
-.container1, .container2 {
+.container1 {
     display: inline-block;
     cursor: pointer;
     position: fixed;
-    top: 30px;
+    top: 60px;
     right: 40px;
     z-index: 1000;
     transition: 0.5s;
@@ -212,7 +212,7 @@ ul {
 
 #sidfot1{
     text-align: center;
-    margin-top: 430px;
+    margin-top: 180px;
 }
 
 #sidfot2 {
@@ -232,8 +232,6 @@ ul {
 #ombyran {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "byran byranbild"
 }
 
 #byran {
@@ -243,13 +241,12 @@ ul {
 
 #byranbild {
     margin-left: 25px;
+    height: 400px;
 }
 
 #medarbetare {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "infomedarbetare medarbetarebild";
     margin-left: 50px;
 }
 
@@ -282,11 +279,6 @@ img {
     margin-left: 0px;
 }
 
-#infobild {
-    height: 400px;
-}
-
-
 #portratt {
     height: 400px;
     width: 400px;
@@ -299,6 +291,12 @@ img {
 }
 
 @media screen and (max-width: 480px) {
+    header {
+        position: sticky;
+        top: 0;
+        background-color: white;
+    }
+
     #logga1 {
         width: 250px;
         margin-left: 0px;
@@ -315,15 +313,15 @@ img {
         display: inline-block;
         cursor: pointer;
         position: fixed;
-        top: 30px;
-        right: 20px;
+        top: 40px;
+        left: 300px;
         z-index: 1000;
         transition: 0.5s;
     }
 
     #sidfot {
         text-align: center;
-        margin-top: 550px;
+        margin-top: 780px;
     }
 
     #sidfot1 {
@@ -332,6 +330,8 @@ img {
     #logga2 {
         width: 300px;
         margin-left: 0px;
+        position: relative;
+        top: 0;
     }
 
     #logga3 {
@@ -385,14 +385,12 @@ img {
         margin: 6px 0;
     }
 
-    .container1 {
-        top: 40px;
-        left: 250px;
+    .container2 {
+        display: inline-block;
+        cursor: pointer;
+        position: fixed;
         z-index: 1000;
         transition: 0.5s;
-    }
-
-    .container2 {
         top: 45px;
         left: 320px;
     }
@@ -466,8 +464,8 @@ img {
         margin-left: 10px; 
     }
     #infomedarbetare {
-        max-width: 250px;
-        margin-left: 50px;
+        max-width: 400px;
+        margin-left: 20px;
         margin-top: 20px;
     }
 
@@ -497,21 +495,26 @@ img {
         "byran";
     }
 
+    #byranbild {
+        height: 200px;
+
+    }
+
     #infobild{
         height: 200px;
-        width: 280px;
-        margin-left: 37px;
+        width: 300px;
+        margin-left: 0px;
     }
 
     #byran {
+        margin-top: 50px;
         margin-left: 15px;
         margin-right: 15px;
-
     }
 
     #sidfot2 {
         text-align: center;
-        margin-top: 150px;
+        margin-top: 220px;
     }
     #sidfot3 {
         text-align: center;
