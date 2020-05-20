@@ -10,13 +10,16 @@ body {
 
 header {
     margin-bottom: 25px;
+    position: sticky;
+    top: 0;
+    background-color: white;
 }
 
 .container2, .container3, .container4, .container5 {
     display: inline-block;
     cursor: pointer;
     position: fixed;
-    top: 50px;
+    top: 80px;
     right: 50px;
     z-index: 1000;
     transition: 0.5s;
@@ -35,6 +38,7 @@ header {
     background-color:black;
     margin: 6px 0;
 }
+
 
 .container1 {
     display: inline-block;
@@ -214,7 +218,7 @@ ul {
 
 #sidfot {
     text-align: center;
-    margin-top: 400px;
+    margin-top: 250px;
 }
 
 #sidfot1{
